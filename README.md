@@ -9,20 +9,22 @@ Recommended reading [here](https://stackoverflow.com/tags/fortran-iso-c-binding/
 
 1. Fortran development:
     a. Write Fortran [module](src/module_f_example.F95)
-    a. Write Fortran ISO-C binding [module](src/module_c_example.F95)
-1. Libraries generation (in this order):
+    b. Write Fortran ISO-C binding [module](src/module_c_example.F95)
+    
+2. Libraries generation (in this order):
     a. Compile Fortran modules as object files
-    a. Archive Fortran objects as a library
-    a. Compile Fortran ISO-C binding modules as object files
-    a. Archive Fortran ISO-C binding objects as a library
-1. Fortran testing:
+    b. Archive Fortran objects as a library
+    c. Compile Fortran ISO-C binding modules as object files
+    d. Archive Fortran ISO-C binding objects as a library
+    
+3. Fortran testing:
     a. Write Fortran [program](src/f_example.F95) for testing library
-    a. Compile Fortran executable and link to Fortran library
-1. C/C++ testing:
+    b. Compile Fortran executable and link to Fortran library
+4. C/C++ testing:
     a. Write C/C++ [header](include/c_example.hpp) with interfaces from
     in Fortran ISO-C binding
-    a. Write C/C++ [program](src/c_example.cpp) for testing library
-    a. Compile C/C++ executable and link to Fortran ISO-C binding library
+    b. Write C/C++ [program](src/c_example.cpp) for testing library
+    c. Compile C/C++ executable and link to Fortran ISO-C binding library
 
 ## Compiling Fortran code
 
